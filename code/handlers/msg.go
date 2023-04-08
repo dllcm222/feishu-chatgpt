@@ -628,7 +628,7 @@ func sendNewTopicCard(ctx context.Context,
 	newCard, _ := newSendCard(
 		withHeader("👻️ 已开启新的话题", larkcard.TemplateBlue),
 		withMainText(content),
-		withNote("提醒：点击对话框顶部参与回复（回复提示会出现在输入栏），可保持话题连贯"))
+		withNote("提醒：点击对话框顶部参与回复（话题回复界面会弹出），可保持话题连贯"))
 	replyCard(ctx, msgId, newCard)
 }
 
