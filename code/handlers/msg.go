@@ -628,7 +628,7 @@ func sendNewTopicCard(ctx context.Context,
 	newCard, _ := newSendCard(
 		withHeader("👻️ 已开启新的话题", larkcard.TemplateBlue),
 		withMainText(content),
-		withNote("提醒：点击对话框参与回复，可保持话题连贯"))
+		withNote("提醒：点击对话框顶部参与回复（回复提示会出现在输入栏），可保持话题连贯"))
 	replyCard(ctx, msgId, newCard)
 }
 
@@ -661,7 +661,7 @@ func sendHelpCard(ctx context.Context,
 		withSplitLine(),
 		withMainMd("📤 **话题内容导出** 🚧\n"+" 文本回复 *导出* 或 */export*"),
 		withSplitLine(),
-		withMainMd("🎰 **连续对话与多话题模式**\n"+" 点击对话框参与回复，可保持话题连贯。同时，单独提问即可开启全新新话题"),
+		withMainMd("🎰 **连续对话与多话题模式**\n"+" 点击对话框顶部区域以快速参与回复，或点选回复按钮，可保持话题连贯。同时，单独提问即可开启全新新话题"),
 		withSplitLine(),
 		withMainMd("🎒 **需要更多帮助**\n文本回复 *帮助* 或 */help*"),
 	)
